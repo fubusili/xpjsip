@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'xpjsip_Example' do
+  pod 'xpjsip', :path => '../'
+
+  target 'xpjsip_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
