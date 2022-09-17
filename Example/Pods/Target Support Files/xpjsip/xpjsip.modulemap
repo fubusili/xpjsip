@@ -1,0 +1,6 @@
+framework module xpjsip {
+  umbrella header "xpjsip-umbrella.h"
+
+  export *
+  module * { export * }
+}

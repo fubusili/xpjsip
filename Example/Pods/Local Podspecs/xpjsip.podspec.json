@@ -1,0 +1,22 @@
+{
+  "name": "xpjsip",
+  "version": "0.1.0",
+  "summary": "A short description of xpjsip.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/许自理/xpjsip",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "许自理": "fubusili@126.com"
+  },
+  "source": {
+    "git": "https://github.com/许自理/xpjsip.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "xpjsip/Classes/**/*"
+}

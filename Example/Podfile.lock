@@ -1,0 +1,16 @@
+PODS:
+  - xpjsip (0.1.0)
+
+DEPENDENCIES:
+  - xpjsip (from `../`)
+
+EXTERNAL SOURCES:
+  xpjsip:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  xpjsip: ab697fcc6a2b7961845fa1b0b693cc1e82939502
+
+PODFILE CHECKSUM: 50427d4c1bd9453414a53e73f4899d6d0588c190
+
+COCOAPODS: 1.11.2
