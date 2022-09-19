@@ -17,9 +17,9 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description = <<-DESC
+    pjsip for iOS.
+  DESC
 
   s.homepage         = 'https://github.com/fubusili/xpjsip'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -27,16 +27,37 @@ TODO: Add long description of the pod here.
   s.author           = { 'fubusli' => 'fubusili@126.com' }
   s.source           = { :git => 'https://github.com/fubusili/xpjsip.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/fubusili'
-
-  s.ios.deployment_target = '10.0'
-
-  s.source_files = 'xpjsip/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'xpjsip' => ['xpjsip/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.ios.deployment_target = '10.0'
+  s.ios.source_files = "xpjsip/**/*.{h,hpp}"
+  # pod附带静态库路径
+  s.ios.vendored_libraries = 'xpjsip/lib/**/*.a'
+  # 公共文件列表
+  s.ios.public_header_files = ['xpjsip/include/*.{h,hpp}', 'xpjsip/include/**/*.{h,hpp}']
+  # 下载后不删除的文件
+  s.ios.preserve_paths = 'xpjsip/lib/**/*'
+  
+  s.ios.frameworks = 'AudioToolbox', 'AVFoundation'
+  
+  header_search_paths = [
+  '"$(PODS_ROOT)/Headers/Public/xpjsip/include"'
+  ]
+  s.xcconfig = {
+    'HEADER_SEARCH_PATHS' => header_search_paths.join(' '),
+    'GCC_PREPROCESSOR_DEFINITIONS' => 'PJ_AUTOCONF=1'
+  }
+  s.libraries           = 'stdc++'
+  # 保持子目录结构不变
+  s.header_mappings_dir = 'xpjsip'
+  # 源文件是否支持ARC
+  s.requires_arc        = false
+  
+  # ------
+  #xcode 12 以上 pod lib lint 会报错
+  s.pod_target_xcconfig = {
+      'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+    }
+  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  # ------
+  
 end

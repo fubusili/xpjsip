@@ -5,6 +5,7 @@ platform :ios, '10.0'
 
 target 'xpjsip_Example' do
   pod 'xpjsip', :path => '../'
+#  pod 'xpjsip', '~>2.12.1'
 
   target 'xpjsip_Tests' do
     inherit! :search_paths

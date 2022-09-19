@@ -198,16 +198,26 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4B07928F28D5B01A00D4B059 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		6003F589195388D20070C39A /* xpjsip_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "xpjsip_Example" */;
 			buildPhases = (
 				4347E80DD35D57EA151CD81B /* [CP] Check Pods Manifest.lock */,
+				4B07928F28D5B01A00D4B059 /* Headers */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				7C68198042990A3B46AE9952 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +257,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "许自理";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = KY27V78CAG;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -315,24 +328,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C68198042990A3B46AE9952 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-xpjsip_Example/Pods-xpjsip_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/xpjsip/xpjsip.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/xpjsip.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-xpjsip_Example/Pods-xpjsip_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E36D353D38BFBF5F7519A618 /* [CP] Check Pods Manifest.lock */ = {
@@ -494,6 +489,7 @@
 			baseConfigurationReference = 7114A7D5B7BE0034F831CF5F /* Pods-xpjsip_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KY27V78CAG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "xpjsip/xpjsip-Prefix.pch";
 				INFOPLIST_FILE = "xpjsip/xpjsip-Info.plist";
@@ -510,6 +506,7 @@
 			baseConfigurationReference = 9214B7F198925055B647DEF1 /* Pods-xpjsip_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = KY27V78CAG;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "xpjsip/xpjsip-Prefix.pch";
 				INFOPLIST_FILE = "xpjsip/xpjsip-Info.plist";

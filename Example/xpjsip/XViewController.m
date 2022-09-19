@@ -7,7 +7,7 @@
 //
 
 #import "XViewController.h"
-
+#import "pjsip.h"
 @interface XViewController ()
 
 @end

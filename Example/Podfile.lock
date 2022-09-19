@@ -1,5 +1,5 @@
 PODS:
-  - xpjsip (0.1.0)
+  - xpjsip (2.12.1)
 
 DEPENDENCIES:
   - xpjsip (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  xpjsip: 61e769acc328d921fc861af4ff91132c900d7a06
+  xpjsip: 43ae468143472147d1666a843944f29b3c0fc627
 
-PODFILE CHECKSUM: ffc0eb9106f9ec043f6ff78c10ed96fed5fe88a2
+PODFILE CHECKSUM: 843e05bc1a4dc2712aeebede136c416c2a56a015
 
 COCOAPODS: 1.11.3
