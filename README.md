@@ -11,9 +11,9 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Features
 
-> pjsip 2.12.1
-> Supported platforms: iOS10+
-> Supported architectures(iOS): armv7, armv7s, arm64, x86_64
+- pjsip 2.12.1
+- Supported platforms: iOS10+
+- Supported architectures(iOS): armv7, armv7s, arm64, x86_64
 
 ## Installation
 
